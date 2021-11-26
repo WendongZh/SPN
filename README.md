@@ -7,6 +7,7 @@ This project is for our new inpainting method SPN which has been submitted to IE
 Briefly speaking, in this work, we still focus on the key insight that learning semantic priors from specific pretext tasks can benefit image inpainting, and we further strengthen the modeling of the learned priors in this work from the following aspects:
 1) We exploit multi-scale semantic priors in a feature pyramid manner to achieve consistent understanding of both gloabl and local context. The image generator is also improved to incorporate the prior pyramid.
 2) We extend our prior learned in a probabilistic manner which enables our method to handle probabilistic image inpainting problem.
+
 Besides, more depth analyses of the learned prior pyramid are provided in our experiment part.
 
 ## Prerequisites (same with SPL)
