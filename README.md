@@ -18,3 +18,19 @@ Briefly speaking, in this work, we still focus on the key insight that learning 
 
 ## Datasets
 We use [Places2](http://places2.csail.mit.edu), [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) and [Paris Street-View](https://github.com/pathak22/context-encoder) datasets for determinstic image inpainting which is same with [SPL](https://github.com/WendongZh/SPL), and [CelebA-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset is used for probabilistic image inpainting. We also used the irregular mask provided by [Liu et al.](https://arxiv.org/abs/1804.07723) which can be downloaded from [their website](https://nv-adlr.github.io/publication/partialconv-inpainting). For the detailed processes of these datasets please refer to [SPL](https://github.com/WendongZh/SPL).
+
+## Getting Strated
+
+Download the pre-trained models using the following links [Pretrained Models](https://drive.google.com/drive/folders/1oAr61KlWVTypHgL_DV4rr1YbAw4BDf0N?usp=sharing) and copy them under ./checkpoints directory. 
+
+(For training) Make another directory, e.g ./pretrained_ASL, and download the weights of [TResNet_L](https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md) pretrained on OpenImage dataset to this directory.
+
+Install torchlight
+```bash
+cd ./torchlight
+python setup.py install
+```
+
+### Train and Test
+Since our approach can be applied for both deterministic and probabilistic image inpainting, so we seperate the codes under these two setups in different files and each file contains corresponding training and testing commonds.
+
