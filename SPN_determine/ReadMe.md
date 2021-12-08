@@ -28,3 +28,4 @@ CUDA_VISIBLE_DEVICES=0 python eval_final.py --bs 50 --gpus 1 --dataset paris \
 ```
 1) If you cannot successfully install the inplace-abn module, you can comment the ninth line (from src.models import create_model) in [models_inpaint.py](models_inpaint.py), the ASL model will not be established and you can still evaluate our model.
 2) This commond will print the average PSNR, SSIM and L1 results and also save the predicted results in --save_path. You can remove the paramter --save and no images will be saved.
+3) For FID score, we fisrt generate all restored images and use the code from [PICNet](https://github.com/lyndonzheng/Pluralistic-Inpainting).
