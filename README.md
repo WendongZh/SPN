@@ -21,7 +21,7 @@ We use [Places2](http://places2.csail.mit.edu), [CelebA](http://mmlab.ie.cuhk.ed
 
 ## Getting Strated
 
-Download the pre-trained models using the following links [Pretrained Models](https://drive.google.com/drive/folders/1oAr61KlWVTypHgL_DV4rr1YbAw4BDf0N?usp=sharing) and copy them under ./checkpoints directory. 
+Download the pre-trained models and copy them under ./checkpoints directory. 
 
 (For training) Make another directory, e.g ./pretrained_ASL, and download the weights of [TResNet_L](https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md) pretrained on OpenImage dataset to this directory.
 
