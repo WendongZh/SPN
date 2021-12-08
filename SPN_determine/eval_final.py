@@ -196,13 +196,8 @@ if __name__ == '__main__':
             for k, v in pretrained_model.items():
                 k = k.replace('module.', '')
                 new_dict_no_module[k] = v
-
-            
-
+                
             new_dict = {k: v for k, v in new_dict_no_module.items() if k in state_dict.keys()}
-
-            import pdb
-            pdb.set_trace()
 
             state_dict.update(new_dict)
             model.load_state_dict(state_dict)
