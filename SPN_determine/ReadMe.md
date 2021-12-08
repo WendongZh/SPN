@@ -1,4 +1,4 @@
-The training and testing commonds under deterministic inpainting setup is similiar with those used in SPL. We reuse them as follows.
+The training and testing commonds under deterministic inpainting setup is similiar with those used in SPL. Under this setup, we conduct experiments on Places2, CelebA, and Paris StreetView datasets.
 
 ## Training
 We use the DistributedDataParallel (DDP) to train our model, which means that for now, you need at least two GPU cards for training our model. To train our model with only one GPU, you need modify the initialization, datasetloader and optimization parts and I will provide a new version in the future. 
