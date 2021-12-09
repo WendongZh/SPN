@@ -22,13 +22,13 @@ We use [Places2](http://places2.csail.mit.edu), [CelebA](http://mmlab.ie.cuhk.ed
 ## Getting Strated
 Since our approach can be applied for both deterministic and probabilistic image inpainting, so we seperate the codes under these two setups in different files and each file contains corresponding training and testing commonds.
 
-For particular setup,
+For all setups, the common pre-preparations are list as follows:
 
-Download the pre-trained models and copy them under ./checkpoints directory. 
+1) Download the pre-trained models and copy them under ./checkpoints directory. 
 
-(For training) Make another directory, e.g ./pretrained_ASL, and download the weights of [TResNet_L](https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md) pretrained on OpenImage dataset to this directory.
+2) (For training) Make another directory, e.g ./pretrained_ASL, and download the weights of [TResNet_L](https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md) pretrained on OpenImage dataset to this directory.
 
-Install torchlight
+3) Install torchlight
 ```bash
 cd ./torchlight
 python setup.py install
