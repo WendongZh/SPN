@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=2 python eval_final.py --bs 50 --gpus 1 --dataset paris --img_flist ../../Paris_val_sjtu.flist --mask_flist ../../irreg_mask_sjtu.flist --mask_index ../../selected_mask_paris.npy --model checkpoints/x_launcherRN_bs_4_epoch_best.pt --save --save_path ./test_results
+CUDA_VISIBLE_DEVICES=2 python eval_final.py --bs 50 --gpus 1 --dataset paris --img_flist  --mask_flist  --mask_index  --model  --save --save_path 
 
 
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 main.py --bs 4 --gpus 2 --prefix test --with_test --img_flist ../../Paris_train_sjtu.flist --mask_flist ../../irreg_mask_sjtu.flist --test_img_flist ../../Paris_val_sjtu.flist --test_mask_flist ../../irreg_mask_sjtu.flist --pretrained True --pretrained_sr checkpoints/x_launcherRN_bs_4_epoch_best.pt --start_epoch 4 --dataset paris --test_mask_index ../../selected_mask_paris.npy --TRresNet_path ../CUB_bird_dataset/Open_ImagesV6_TRresNet_L_448.pth
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 main.py --bs 4 --gpus 2 --prefix test --with_test --img_flist  --mask_flist  --test_img_flist  --test_mask_flist  --pretrained True --pretrained_sr --start_epoch 4 --dataset paris --test_mask_index  --TRresNet_path 
