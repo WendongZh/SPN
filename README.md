@@ -10,6 +10,9 @@ Briefly speaking, in this work, we still focus on the key insight that learning 
 1) We exploit multi-scale semantic priors in a feature pyramid manner to achieve consistent understanding of both gloabl and local context. The image generator is also improved to incorporate the prior pyramid.
 2) We extend our prior learned in a probabilistic manner which enables our method to handle probabilistic image inpainting problem.
 3) Besides, more analyses of the learned prior pyramid and the choices of the semantic supervision are provided in our experiment part.
+<p align='center'>  
+  <img src='https://github.com/WendongZh/SPL-Image-Inpainting-with-Semantic-Priors/blob/main/img/results.PNG' width='870'/>
+</p>
 
 ## Prerequisites (same with SPL)
 - Python 3.7
