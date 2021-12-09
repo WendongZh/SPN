@@ -11,7 +11,7 @@ Briefly speaking, in this work, we still focus on the key insight that learning 
 2) We extend our prior learned in a probabilistic manner which enables our method to handle probabilistic image inpainting problem.
 3) Besides, more analyses of the learned prior pyramid and the choices of the semantic supervision are provided in our experiment part.
 <p align='center'>  
-  <img src='https://github.com/WendongZh/SPL-Image-Inpainting-with-Semantic-Priors/blob/main/img/results.PNG' width='870'/>
+  <img src='https://github.com/WendongZh/SPN/blob/main/SPN.PNG' width='870'/>
 </p>
 
 ## Prerequisites (same with SPL)
