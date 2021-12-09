@@ -1,5 +1,6 @@
 The training and testing commonds under deterministic inpainting setup is similiar with those used in SPL. Under this setup, we conduct experiments on Places2, CelebA, and Paris StreetView datasets.
 
+## Pretrained Model
 There are currently some troubles with my google drive to share links, so I provide pretrained model on [BaiDu](https://pan.baidu.com/s/1Jd_lw6so5QjRcm1-K9RkdQ), code:2x99
 
 Links on google drive will be updated if it works.
