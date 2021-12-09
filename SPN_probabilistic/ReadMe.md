@@ -1,7 +1,5 @@
 The training and testing commonds under probabilistic inpainting setup is similiar with those used in SPL. Under this setup, we conduct experiments on CelebA-HQ dataset.
 
-I'm sorry about that this part includes some redundant files such as bilinear.py and models (actually, this directory contains codes for yolov5 and we use it in our ablation study part.)
-
 There are currently some troubles with my google drive to share links, so I provide pretrained model on [BaiDu](https://pan.baidu.com/s/1kgcs9_LFRoA40F81h_rHVQ), code:hqek
 
 Links on google drive will be updated if it works.
@@ -33,3 +31,6 @@ CUDA_VISIBLE_DEVICES=0 python eval_final_savenp_max.py --bs 50 --gpus 1 --datase
 1) If you cannot successfully install the inplace-abn module, you can comment the eleventh line (from src.models import create_model) in [models_inpaint.py](models_inpaint.py), the ASL model will not be established and you can still evaluate our model.
 2) As we mentioned in our paper, this commond will random sample 5 results for each input and calculate the average MAX PSNR, SSIM and L1 results. All 5 results will be saved in --save_path. You can remove the paramter --save and no images will be saved.
 3) For FID score, we fisrt generate all restored images and use the code from [PICNet](https://github.com/lyndonzheng/Pluralistic-Inpainting).
+
+## Other
+I'm sorry about that this part includes some redundant files such as bilinear.py and models (actually, this directory contains codes for yolov5 and we use it in our ablation study part.). Thanks for your interests anyway.
