@@ -2,6 +2,10 @@ The training and testing commonds under probabilistic inpainting setup is simili
 
 I'm sorry about that this part includes some redundant files such as bilinear.py and models (actually, this directory contains codes for yolov5 and we use it in our ablation study part.)
 
+There are currently some troubles with my google drive to share links, so I provide pretrained model on [BaiDu](https://pan.baidu.com/s/1kgcs9_LFRoA40F81h_rHVQ), code:hqek
+
+Links on google drive will be updated if it works.
+
 ## Training
 We use the DistributedDataParallel (DDP) to train our model, which means that for now, you need at least two GPU cards for training our model. To train our model with only one GPU, you need modify the initialization, datasetloader and optimization parts. 
 
