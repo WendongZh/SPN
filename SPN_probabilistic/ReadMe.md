@@ -1,5 +1,6 @@
 The training and testing commonds under probabilistic inpainting setup is similiar with those used in SPL. Under this setup, we conduct experiments on CelebA-HQ dataset.
 
+## Pretrained Model
 There are currently some troubles with my google drive to share links, so I provide pretrained model on [BaiDu](https://pan.baidu.com/s/1kgcs9_LFRoA40F81h_rHVQ), code:hqek
 
 Links on google drive will be updated if it works.
