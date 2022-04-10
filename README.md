@@ -1,9 +1,9 @@
 ### SPN: Fully Context-Aware Image Inpainting with a Learned Semantic Pyramid
-Code for Fully Context-Aware Image Inpainting with a Learned Semantic Pyramid, submitted to IEEE. Pretrained models have been uploaded.
+Code for Fully Context-Aware Image Inpainting with a Learned Semantic Pyramid。
 
-This project is for our new inpainting method SPN which has been submitted to IEEE under peer review. This work is an extension version of our previous work [SPL (IJCAI'21)](https://github.com/WendongZh/SPL). If you have any questions, feel free to make issues. Thanks for your interests!
+This project is for our new inpainting method SPN which is under peer review. This work is an extension version of our previous work [SPL (IJCAI'21)](https://github.com/WendongZh/SPL). If you have any questions, feel free to make issues. Thanks for your interests!
 
-[Paper on Arxiv](http://arxiv.org/abs/2112.04107). This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible
+[Paper on Arxiv](http://arxiv.org/abs/2112.04107). This work has been submitted to journal for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible
 
 ### Introduction:
 Briefly speaking, in this work, we still focus on the key insight that learning semantic priors from specific pretext tasks can benefit image inpainting, and we further strengthen the modeling of the learned priors in this work from the following aspects:
