@@ -5,6 +5,12 @@ This project is for our new inpainting method SPN which is under peer review. Th
 
 [Paper on Arxiv](http://arxiv.org/abs/2112.04107). This work has been submitted to journal for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible
 
+
+
+**Update 2023.4** We have added the function ``Kmeans_map(x)'' in main.py file in both setups. This function is used to draw the K-means cluster results in our experiments part.
+
+
+
 ### Introduction:
 Briefly speaking, in this work, we still focus on the key insight that learning semantic priors from specific pretext tasks can benefit image inpainting, and we further strengthen the modeling of the learned priors in this work from the following aspects:
 1) We exploit multi-scale semantic priors in a feature pyramid manner to achieve consistent understanding of both gloabl and local context. The image generator is also improved to incorporate the prior pyramid.
