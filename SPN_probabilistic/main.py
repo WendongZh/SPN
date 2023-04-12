@@ -26,6 +26,7 @@ from models_inpaint import InpaintingModel
 import torchlight
 import torch.distributed as dist
 from bilinear import crop_bbox_batch, uncrop_bbox
+import cv2
 
 
 
@@ -295,6 +296,24 @@ def checkpoint(epoch):
     torch.save(model.state_dict(), model_out_path)
     print("Checkpoint saved to {}".format(model_out_path))
 
+def Kmeans_map(x):
+    # x represents the input tensor
+    c, h, w = x.size()
+    x = x.view(c, h*w).contiguous().transpose(0, 1)
+    x = x.cpu().numpy()
+    
+    criteria = (cv2.TERM_CRITERIA_EPS + cv2.TermCriteria_MAX_ITER, 20, 0.5)
+    
+    flags = cv2.KMEANS_RANDOM_CENTERS
+    
+    # clusters number K is set to 8
+    K = 8
+    compactness, labels, centers = cv2.kmeans(x, K, None, criteria, 10, flags)
+    
+    img_output = labels.reshape((h, w))
+    img_output = np.uint8((img_output /8) * 255)
+    im_color = cv2.applyColorMap(img_output, cv2.COLORMAP_JET) 
+    return im_color
 
 if __name__ == '__main__':
     # if opt.tb:
