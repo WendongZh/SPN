@@ -1,10 +1,10 @@
 ### SPN: Fully Context-Aware Image Inpainting with a Learned Semantic Pyramid
-Code for Fully Context-Aware Image Inpainting with a Learned Semantic Pyramid, accepted by Pattern Recognition'23.
+Code for Fully Context-Aware Image Inpainting with a Learned Semantic Pyramid, accepted by [Pattern Recognition'23](https://www.sciencedirect.com/science/article/pii/S0031320323004399).
 
 This project is for our new inpainting method SPN which is under peer review. This work is an extension version of our previous work [SPL (IJCAI'21)](https://github.com/WendongZh/SPL). If you have any questions, feel free to make issues. Thanks for your interests!
 
-[Paper on Arxiv](http://arxiv.org/abs/2112.04107). This work has been accpted by Pattern Recognition 2023. The link to our final version will be updated soom.
-
+<!--This work has been accpted by Pattern Recognition 2023. The link to our final version is [here](https://www.sciencedirect.com/science/article/pii/S0031320323004399).
+[Paper on Arxiv](http://arxiv.org/abs/2112.04107). -->
 
 
 **Update 2023.4** We have added the function ``Kmeans_map(x)'' in main.py file in both setups. This function is used to draw the K-means cluster results in our experiments part.
